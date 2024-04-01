@@ -18,6 +18,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult QuerySelector()
+    {
+        return View();
+    }
+
+    public IActionResult QuerySelectorAll()
+    {
+        return View();
+    }
+
     public IActionResult DynamicElements()
     {
         return View();

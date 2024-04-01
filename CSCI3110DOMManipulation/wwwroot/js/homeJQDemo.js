@@ -1,5 +1,5 @@
 ﻿"use strict";
-$(document).ready(function _main() {
+$(function _main() {
     $(document).on("click", "#btnHideForm", (e) => {
         $('form').hide();
     });
@@ -23,6 +23,7 @@ $(document).ready(function _main() {
         $(e.target).css("background-color", "pink");
     });
     $("article").css("background-color", "cyan");
+    $("#formInputArea").css("background-color", "#008080");
     let txt1 = "<p>Text 1</p>";              // Create element with HTML
     let txt2 = $("<p></p>").text("Text 2");  // Create with jQuery
     let txt3 = document.createElement("p");  // Create with DOM
@@ -31,7 +32,7 @@ $(document).ready(function _main() {
 
     // Not jQuery
     const theForm = document.querySelector("#formInputArea");
-    theForm.addEventListener("submit", async (e) => {
+    theForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const formData = new FormData(theForm);
         for (const pair of formData.entries()) {

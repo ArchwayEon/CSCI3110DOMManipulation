@@ -3,14 +3,10 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p id="main">Main Paragraph</p>
-    <p id="basic">Basic Paragraph 2</p>
-    <p id="exclamation">Paragraph !!</p>
-    <button id="btnClickMe">Display Elements!</button>
-    <button id="btnClickMeToo">Change the DOM!</button>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <a asp-action="QuerySelector">querySelector()</a>
+    <a asp-action="QuerySelectorAll">querySelectorAll()</a>
+    <a asp-action="DynamicElements">Dynamic Elements</a>
+    <a asp-action="JQDemo">JQuery Demo</a>
 </div>
 
-@section Scripts{
-    <script defer src="~/js/homeIndex.js"></script>
-}
